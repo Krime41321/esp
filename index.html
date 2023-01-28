@@ -1,0 +1,17 @@
+<form>
+    <label for="input-data">Enter Data:</label>
+    <input type="text" id="input-data">
+    <button type="button" onclick="displayData()">Submit</button>
+</form>
+
+<div id="display-data"></div>
+
+<script>
+    function displayData() {
+        // Get the input data
+        var inputData = document.getElementById("input-data").value;
+
+        // Display the input data and the text in the display-data div
+        document.getElementById("display-data").innerHTML = " https://mathsolver.microsoft.com/pl/solve-problem/" + inputData;
+    }
+</script>
